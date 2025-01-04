@@ -1,13 +1,12 @@
 # python-chatmessage backend
 
 
+
+
 import socket
 import os
-
 sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-
 server_address = '/tmp/socket_file'
-
 try:
     os.unlink(server_address)
 
@@ -17,10 +16,7 @@ except FileNotFoundError:
 print('Starting up on {}'.format(server_address))
 
 sock.bind(server_address)
-
-
 sock.listen(1)
-
 
 while True:
 
