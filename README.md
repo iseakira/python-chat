@@ -1,4 +1,4 @@
-# Local Chat Messenger
+# Local Chat Messenger(TCP通信)
 ローカルシステムで動作するシンプルなチャットメッセンジャーを実装しました。
 同じマシン上で動作するサーバ（server.py）とクライアント（client.py）、UNIX ドメインソケットを介してメッセージを送受信するプログラムです。
 
